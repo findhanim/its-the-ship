@@ -1,0 +1,151 @@
+:root {
+  --accent: #c22400;
+  --beige: #ffecc7;
+  --black: #111111;
+  --white: #ffffff;
+}
+
+/* Local Fonts */
+@font-face {
+  font-family: "Evil Dead";
+  font-display: swap;
+  font-named-instance: "Regular";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(../assets/fonts/EvilDead.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Galano Grotesque";
+  font-display: swap;
+  font-named-instance: "Regular";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(../assets/fonts/GalanoGrotesqueRegular.otf) format("otf");
+}
+
+/* Default Styling */
+body {
+  background-color: var(--black);
+  color: var(--beige);
+  font-family: "Galano Grotesque";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Headings */
+h1 {
+  font-family: "Evil Dead";
+  font-size: 56px;
+  line-height: 72px;
+}
+h2 {
+  font-family: "Evil Dead";
+  font-size: 48px;
+  line-height: 64px;
+}
+h3 {
+  font-family: "Evil Dead";
+  font-size: 32px;
+  line-height: 48px;
+}
+h4 {
+  font-family: "Evil Dead";
+  font-size: 28px;
+  line-height: 44px;
+}
+h5 {
+  font-family: "Evil Dead";
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* Texts */
+/* Bold */
+b {
+  font-family: "Galano Grotesque";
+  font-weight: 900;
+}
+/* Semibold */
+sb {
+  font-family: "Galano Grotesque";
+  font-weight: 600;
+}
+/* Tag */
+tag {
+  background-color: var(--beige);
+  border-radius: 20px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+/* Enabled */
+e {
+  color: #ffffff;
+  font-size: 14px;
+}
+/* Disabled */
+d {
+  color: #6d8391;
+  font-size: 14px;
+}
+
+/* Color Danger */
+.border-danger {
+  border-color: var(--accent) !important;
+}
+.bg-danger {
+  background-color: var(--accent) !important;
+}
+
+/* Navigation Bar */
+.nav-link {
+  color: var(--beige);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.nav-link:hover {
+  color: var(--accent);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--accent);
+  border: var(--accent);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  padding: 10px 16px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  padding: 8px 14px;
+}
+
+/* Header */
+.bg-header {
+  background-image: url(../assets/images/background/bg-header.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 768px;
+}
+
+/* Components */
+#cabin-booked h1 {
+  font-size: 64px;
+  letter-spacing: -10px;
+}
+
+#cabin-booked p {
+  line-height: 8px;
+}
