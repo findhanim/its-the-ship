@@ -1,77 +1,101 @@
 :root {
   --accent: #c22400;
   --beige: #ffecc7;
-  --black: #111111;
+  --black: #000000;
   --white: #ffffff;
 }
 
-/* Local Fonts */
+/* ---------- LOCAL FONTS ---------- */
+
 @font-face {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-display: swap;
-  font-named-instance: "Regular";
+  font-named-instance: 'Regular';
   font-style: normal;
   font-weight: 100 900;
-  src: url(../assets/fonts/EvilDead.ttf) format("ttf");
+  src: url(../assets/fonts/EvilDead.ttf) format('ttf');
 }
 @font-face {
-  font-family: "Galano Grotesque";
+  font-family: 'Galano Grotesque';
   font-display: swap;
-  font-named-instance: "Regular";
+  font-named-instance: 'Regular';
   font-style: normal;
   font-weight: 100 900;
-  src: url(../assets/fonts/GalanoGrotesqueRegular.otf) format("otf");
+  src: url(../assets/fonts/GalanoGrotesqueRegular.otf) format('otf');
 }
 
-/* Default Styling */
+/* ---------- DEFAULT STYLING ---------- */
+
 body {
   background-color: var(--black);
   color: var(--beige);
-  font-family: "Galano Grotesque";
+  font-family: 'Galano Grotesque';
   font-size: 16px;
   font-weight: 400;
 }
 
-/* Headings */
+/* ---------- TYPOGRAPHY ---------- */
+
+/* Heading */
 h1 {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-size: 56px;
   line-height: 72px;
 }
 h2 {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-size: 48px;
   line-height: 64px;
 }
 h3 {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-size: 32px;
   line-height: 48px;
 }
 h4 {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-size: 28px;
   line-height: 44px;
 }
 h5 {
-  font-family: "Evil Dead";
+  font-family: 'Evil Dead';
   font-size: 24px;
   line-height: 40px;
 }
 
-/* Texts */
-/* Bold */
+/* Text */
+.t1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.t2 {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.t3 {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.t4 {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+/* Font Styling */
 b {
-  font-family: "Galano Grotesque";
+  font-family: 'Galano Grotesque';
   font-weight: 900;
 }
-/* Semibold */
-sb {
-  font-family: "Galano Grotesque";
+.semi-bold {
+  font-family: 'Galano Grotesque';
   font-weight: 600;
 }
-/* Tag */
-tag {
+.beige-tag {
   background-color: var(--beige);
   border-radius: 20px;
   color: var(--accent);
@@ -80,40 +104,29 @@ tag {
   padding: 2px 10px;
   text-transform: uppercase;
 }
-/* Enabled */
-e {
+.red-tag {
+  background-color: rgba(194, 36, 0, 0.5);
+  border-radius: 20px;
+  color: var(--beige);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  text-shadow: -2px -1px 0 var(--red), 2px -1px 0 var(--red),
+    -1px 2px 0 var(--red), 2px 1px 0 var(--red);
+  text-transform: uppercase;
+}
+.white {
   color: #ffffff;
   font-size: 14px;
 }
-/* Disabled */
-d {
+.muted {
   color: #6d8391;
   font-size: 14px;
 }
 
-/* Color Danger */
-.border-danger {
-  border-color: var(--accent) !important;
-}
-.bg-danger {
-  background-color: var(--accent) !important;
-}
+/* ---------- BOOTSTRAP OVERRIDES ---------- */
 
-/* Navigation Bar */
-.nav-link {
-  color: var(--beige);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin-right: 5px;
-}
-.nav-link:hover {
-  color: var(--accent);
-}
-
-/* Buttons */
+/* Button */
 .btn {
   background-color: var(--accent);
   border: var(--accent);
@@ -131,6 +144,30 @@ d {
   padding: 8px 14px;
 }
 
+/* Color Danger */
+.border-danger {
+  border-color: var(--accent) !important;
+}
+.bg-danger {
+  background-color: var(--accent) !important;
+}
+
+/* ---------- COMPONENTS ---------- */
+
+/* Navigation */
+.nav-link {
+  color: var(--beige);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.nav-link:hover {
+  color: var(--accent);
+}
+
 /* Header */
 .bg-header {
   background-image: url(../assets/images/background/bg-header.png);
@@ -139,8 +176,23 @@ d {
   background-size: cover;
   height: 768px;
 }
+.header-web {
+  background-image: url(../assets/images/png/header-web.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 640px;
+  margin-top: -13%;
+  margin-left: -12%;
+}
+.intro-section {
+  margin-top: -12%;
+}
+.header-collage {
+  margin-top: -15%;
+}
 
-/* Components */
+/* Cabin Section */
 #cabin-booked h1 {
   font-size: 64px;
   letter-spacing: -10px;

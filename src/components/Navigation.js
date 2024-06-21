@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Navbar, Nav, Button } from "react-bootstrap";
+import React from 'react'
+import { Container, Navbar, Nav, Button } from 'react-bootstrap'
 // Assets
-import ITSLogo from "../assets/images/logo/logo-its-white.png";
+import ITSLogo from '../assets/images/logo/logo-its-white.png'
 
-export default function NavBar() {
+export default function Navigation() {
   return (
     <Navbar
       expand="lg"
@@ -32,5 +32,5 @@ export default function NavBar() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  );
+  )
 }
