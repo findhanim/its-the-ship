@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CardProgress() {
   return (
-    <div
+    <main
       id="cabin-booked"
       className="col-lg-5 border border-2 border-white rounded-4 p-3"
     >
@@ -27,6 +27,6 @@ export default function CardProgress() {
           aria-valuemax="100"
         ></div>
       </div>
-    </div>
+    </main>
   )
 }

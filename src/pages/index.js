@@ -4,16 +4,17 @@ import { Button } from 'react-bootstrap'
 import CardProgress from '../components/CardProgress'
 import CardInfo from '../components/CardInfo'
 import Navigation from '../components/Navigation'
+import SectionLineups from '../components/SectionLineups'
+import SectionReels from '../components/SectionReels'
 import Tabs from '../components/Tabs'
 // Assets
+import dividerDrip from '../assets/images/png/divider-drip.png'
+import gifEye from '../assets/images/gif/gif-eye.gif'
 import headerIts from '../assets/images/png/header-its.png'
 import headerCollage from '../assets/images/png/header-collage.png'
 import headerPhotoburn from '../assets/images/png/header-photoburn.png'
 import headlinersTitle from '../assets/images/image/headliners-title.png'
 import headlinersFrame from '../assets/images/png/headliners-frame.png'
-import thumbnail from '../assets/images/image/thumbnail-dummy.png'
-import dividerDrip from '../assets/images/png/divider-drip.png'
-import LogoGroup from '../components/LogoGroup'
 
 const IndexPage = () => {
   return (
@@ -93,43 +94,8 @@ const IndexPage = () => {
             {/* Tabs */}
             <Tabs></Tabs>
           </section>
-          {/* Previous Reels */}
-          <section className="py-5">
-            <h3 className="d-lg-flex justify-content-center pb-5">
-              I KNOW WHAT YOU DID LAST SAILINGS…
-            </h3>
-            <div className="d-lg-flex">
-              <div class="row gx-4">
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-              </div>
-            </div>
-            <div className="d-lg-flex my-4">
-              <div class="row gx-4">
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-                <div className="col-lg-4">
-                  <img src={thumbnail} width="100%" alt="header-its" />
-                </div>
-              </div>
-            </div>
-            <div className="d-lg-flex justify-content-center">
-              <Button>Book A Cabin</Button>
-            </div>
-          </section>
           {/* Cabins */}
-          <section>
+          <section className="py-5">
             <div className="d-lg-flex col-lg-12 my-4 align-items-center">
               {/* Description */}
               <div className="col-lg-6">
@@ -157,12 +123,26 @@ const IndexPage = () => {
               <Button>View All Cabins</Button>
             </div>
           </section>
+          {/* Previous Reels */}
+          <section className="pb-5">
+            {/* Eye gif */}
+            <div className="d-lg-flex justify-content-end">
+              <img src={gifEye} height="253px" alt="gif-eye" />
+            </div>
+            <h3 className="d-lg-flex justify-content-center pb-5">
+              I KNOW WHAT YOU DID LAST SAILINGS…
+            </h3>
+            <SectionReels></SectionReels>
+            <div className="d-lg-flex justify-content-center">
+              <Button>Book A Cabin</Button>
+            </div>
+          </section>
         </div>
         {/* Past Lineups */}
         <section className="bg-red d-lg-flex justify-content-center align-items-center py-5">
           <div className="container col-lg-10 row">
             <h2 className="mt-4 text-center">Past Lineups</h2>
-            <LogoGroup></LogoGroup>
+            <SectionLineups></SectionLineups>
           </div>
         </section>
         <img src={dividerDrip} width="100%" alt="divider-drip" />

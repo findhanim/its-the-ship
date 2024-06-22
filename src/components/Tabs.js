@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Tabs() {
   return (
-    <div>
+    <main>
       <div class="d-flex align-items-start">
         <div
           class="nav flex-column nav-pills me-3"
@@ -94,6 +94,6 @@ export default function Tabs() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

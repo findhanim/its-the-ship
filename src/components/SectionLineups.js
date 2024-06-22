@@ -1,11 +1,12 @@
 import React from 'react'
+// Assets
 import logoMarlo from '../assets/images/logo/logo-marlo.png'
 import logoMikeWilliams from '../assets/images/logo/logo-mike-williams.png'
 import logoShowtek from '../assets/images/logo/logo-showtek.png'
 import logoUb40 from '../assets/images/logo/logo-ub40.png'
 import logoYellowClaw from '../assets/images/logo/logo-yellow-claw.png'
 
-export default function LogoGroup() {
+export default function SectionLineups() {
   return (
     <main className="pt-5">
       <div className="d-lg-flex justify-content-between align-items-center py-3">
