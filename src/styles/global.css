@@ -196,6 +196,12 @@ b {
   border-color: var(--gray) !important;
 }
 
+/* Vertical Rule */
+.vr {
+  opacity: 1 !important;
+  width: 1px !important;
+}
+
 /* ---------- COMPONENTS ---------- */
 
 /* Navigation */

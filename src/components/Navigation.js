@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { Navbar, Nav, Button } from 'react-bootstrap'
 // Assets
+import chevronDown from '../assets/images/svg/chevron-down.svg'
 import itsLogo from '../assets/images/logo/logo-its-white.png'
 import navbarDrip from '../assets/images/png/navbar-drip.png'
+import shoppingCart from '../assets/images/svg/shopping-cart.svg'
 
 export default function Navigation() {
   // Change bg color
@@ -42,17 +44,24 @@ export default function Navigation() {
           id="basic-navbar-nav"
           className="d-lg-flex justify-content-end"
         >
-          <Nav className="mx-4">
+          <Nav className="mx-4 align-items-center">
             {/* Links */}
-            <Nav.Link href="#about">The Ship</Nav.Link>
-            <Nav.Link href="#services">Cabins</Nav.Link>
-            <Nav.Link href="#contact">LineUp</Nav.Link>
-            <Nav.Link href="#contact">FAQ</Nav.Link>
-            <Nav.Link
-              href="#contact"
-              className={bgColor ? 'text-black' : 'auto'}
-            >
-              Login
+            <Nav.Link href="#about">
+              The Ship
+              <img
+                src={chevronDown}
+                className="ms-1"
+                height="22px"
+                alt="chevron-down"
+              />
+            </Nav.Link>
+            <Nav.Link href="#cabins">Cabins</Nav.Link>
+            <Nav.Link href="#lineup">LineUp</Nav.Link>
+            <Nav.Link href="#faq">FAQ</Nav.Link>
+            <div class="d-lg-block d-none vr mx-3 my-2"></div>
+            <Nav.Link href="#login">Login</Nav.Link>
+            <Nav.Link href="#login">
+              <img src={shoppingCart} height="24px" alt="shopping-cart" />
             </Nav.Link>
             {/* Booking - Web View */}
             <Button

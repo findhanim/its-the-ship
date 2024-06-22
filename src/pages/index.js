@@ -82,17 +82,17 @@ const IndexPage = () => {
         </div>
         <p className="t2 text-center">With many more to be announced</p>
       </section>
+      {/* What To Expect */}
+      <section className="border-beige mt-5">
+        <div className="container d-lg-flex justify-content-between py-4 align-items-center text-danger">
+          <h2>What to expect on board</h2>
+          <Button>Book A Cabin</Button>
+        </div>
+        {/* Tabs */}
+        <Tabs></Tabs>
+      </section>
 
       <div className="container my-5">
-        {/* What To Expect */}
-        <section className="border-beige">
-          <div className="d-lg-flex justify-content-between py-4 align-items-center text-danger">
-            <h2>What to expect on board</h2>
-            <Button>Book A Cabin</Button>
-          </div>
-          {/* Tabs */}
-          <Tabs></Tabs>
-        </section>
         {/* Cabins */}
         <section className="pt-5">
           <div className="d-lg-flex col-lg-12 my-4 align-items-center">

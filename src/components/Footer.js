@@ -13,8 +13,8 @@ export default function Footer() {
         <div className="col-lg-3">
           <img src={itsLogo} height="80px" alt="its-logo" />
         </div>
-        <div className="col-lg-6 d-flex justify-content-between">
-          <h6>Socialise With Us</h6>
+        <div className="col-lg-6 d-flex justify-content-between align-items-center">
+          <h6 className="pt-lg-2">Socialise With Us</h6>
           <span>
             <img src={igLogo} className="social-icon" alt="ig-logo" />
             /itstheship
@@ -36,11 +36,12 @@ export default function Footer() {
         <div className="col-lg-6 d-flex justify-content-between">
           <span className="t3">It's The Ship, Copyright 2023.</span>
           <span className="t3">Terms and Conditions</span>
+          <div class="d-lg-block d-none vr mx-2 mb-1"></div>
           <span className="t3">Privacy Policy</span>
         </div>
         <div className="offset-lg-4 col-lg-2 d-flex justify-content-end">
           <span>
-            Powered by <b>A.D</b>
+            powered by <b>A.D</b>
           </span>
         </div>
       </section>

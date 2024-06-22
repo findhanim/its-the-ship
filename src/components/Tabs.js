@@ -11,7 +11,7 @@ import TabContent from './TabContent'
 export default function Tabs() {
   return (
     <main>
-      <div class="border-beige-tabs d-flex align-items-start p-3">
+      <div class="border-beige-tabs d-flex align-items-start p-3 ps-5">
         {/* Tabs Navigation */}
         <div
           class="nav nav-pills flex-column align-items-start me-3 col-lg-3 mt-lg-5"
@@ -131,7 +131,7 @@ export default function Tabs() {
         </div>
         {/* Tabs Content */}
         <div
-          class="border-beige-content tab-content p-lg-5"
+          class="border-beige-content tab-content p-lg-5 me-5"
           id="fun-tabContent"
         >
           {/* Entertainment */}
