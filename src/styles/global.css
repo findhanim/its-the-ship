@@ -34,6 +34,7 @@ body {
   font-family: 'Galano Grotesque';
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -169,11 +170,17 @@ b {
   background-color: rgba(109, 131, 145, 0.4) !important;
   border: 2px solid var(--gray) !important;
 }
+.nav-pills .nav-link {
+  color: var(--accent) !important;
+  padding: 14px !important;
+}
+.nav-pills .active {
+  background-color: transparent !important;
+  color: var(--white) !important;
+  text-decoration: underline !important;
+}
 
 /* Variant Danger */
-.border-danger {
-  border-color: var(--accent) !important;
-}
 .bg-danger {
   background-color: var(--accent) !important;
 }
@@ -181,14 +188,12 @@ b {
   color: var(--accent) !important;
 }
 
-/* Variant Muted */
+/* Borders */
+.border-danger {
+  border-color: var(--accent) !important;
+}
 .border-muted {
   border-color: var(--gray) !important;
-}
-
-/* Variant Dark Gray*/
-.border-darkgray {
-  border: 10px solid var(--darkGray) !important;
 }
 
 /* ---------- COMPONENTS ---------- */
@@ -255,6 +260,18 @@ b {
   height: 970px;
 }
 
+/* Entertainments */
+.border-beige {
+  border-top: 10px solid var(--beige);
+}
+.border-beige-tabs {
+  border-top: 10px solid var(--beige);
+  border-bottom: 10px solid var(--beige);
+}
+.border-beige-content {
+  border-left: 10px solid var(--beige);
+}
+
 /* Past Lineups */
 .bg-red {
   background-color: var(--accent);
@@ -293,6 +310,9 @@ b {
 }
 .section-newsletter {
   margin-top: -7%;
+}
+.border-darkgray {
+  border: 10px solid var(--darkGray);
 }
 
 /* Footer */

@@ -85,8 +85,8 @@ const IndexPage = () => {
 
       <div className="container my-5">
         {/* What To Expect */}
-        <section className="py-5">
-          <div className="d-lg-flex justify-content-between align-items-center text-danger">
+        <section className="border-beige">
+          <div className="d-lg-flex justify-content-between py-4 align-items-center text-danger">
             <h2>What to expect on board</h2>
             <Button>Book A Cabin</Button>
           </div>

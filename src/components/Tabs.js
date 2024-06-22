@@ -1,96 +1,192 @@
 import React from 'react'
+// Assets
+import entBar from '../assets/images/png/entertainment-bar.png'
+import entBeauty from '../assets/images/png/entertainment-beauty.png'
+import entDining from '../assets/images/png/entertainment-dining.png'
+import entShopping from '../assets/images/png/entertainment-shopping.png'
+import entSkull from '../assets/images/png/entertainment-skull.png'
+import entSport from '../assets/images/png/entertainment-sport.png'
+import TabContent from './TabContent'
 
 export default function Tabs() {
   return (
     <main>
-      <div class="d-flex align-items-start">
+      <div class="border-beige-tabs d-flex align-items-start p-3">
+        {/* Tabs Navigation */}
         <div
-          class="nav flex-column nav-pills me-3"
-          id="v-pills-tab"
+          class="nav nav-pills flex-column align-items-start me-3 col-lg-3 mt-lg-5"
+          id="fun-tab"
           role="tablist"
           aria-orientation="vertical"
         >
+          {/* Entertainment */}
           <button
             class="nav-link active"
-            id="v-pills-home-tab"
+            id="fun-entertainment-tab"
             data-bs-toggle="pill"
-            data-bs-target="#v-pills-home"
+            data-bs-target="#fun-entertainment"
             type="button"
             role="tab"
-            aria-controls="v-pills-home"
+            aria-controls="fun-entertainment"
             aria-selected="true"
           >
+            <img
+              src={entSkull}
+              className="me-2"
+              height="25px"
+              alt="ent-skull"
+            />
             Entertainment
           </button>
+          {/* Dining */}
           <button
             class="nav-link"
-            id="v-pills-profile-tab"
+            id="fun-dining-tab"
             data-bs-toggle="pill"
-            data-bs-target="#v-pills-profile"
+            data-bs-target="#fun-dining"
             type="button"
             role="tab"
-            aria-controls="v-pills-profile"
+            aria-controls="fun-dining"
             aria-selected="false"
           >
-            Profile
+            <img
+              src={entDining}
+              className="me-2"
+              height="25px"
+              alt="ent-skull"
+            />
+            Dining
           </button>
+          {/* Bars & Lounge */}
           <button
             class="nav-link"
-            id="v-pills-messages-tab"
+            id="fun-bars-tab"
             data-bs-toggle="pill"
-            data-bs-target="#v-pills-messages"
+            data-bs-target="#fun-bars"
             type="button"
             role="tab"
-            aria-controls="v-pills-messages"
+            aria-controls="fun-bars"
             aria-selected="false"
           >
-            Messages
+            <img src={entBar} className="me-2" height="25px" alt="ent-skull" />
+            Bars & Lounge
           </button>
+          {/* Shopping */}
           <button
             class="nav-link"
-            id="v-pills-settings-tab"
+            id="fun-shopping-tab"
             data-bs-toggle="pill"
-            data-bs-target="#v-pills-settings"
+            data-bs-target="#fun-shopping"
             type="button"
             role="tab"
-            aria-controls="v-pills-settings"
+            aria-controls="fun-shopping"
             aria-selected="false"
           >
-            Settings
+            <img
+              src={entShopping}
+              className="me-2"
+              height="25px"
+              alt="ent-skull"
+            />
+            Shopping
+          </button>
+          {/* Beauty & Wellness */}
+          <button
+            class="nav-link"
+            id="fun-beauty-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#fun-beauty"
+            type="button"
+            role="tab"
+            aria-controls="fun-beauty"
+            aria-selected="false"
+          >
+            <img
+              src={entBeauty}
+              className="me-2"
+              height="25px"
+              alt="ent-skull"
+            />
+            Beauty & Wellness
+          </button>
+          {/* Sports & Rec */}
+          <button
+            class="nav-link"
+            id="fun-sport-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#fun-sport"
+            type="button"
+            role="tab"
+            aria-controls="fun-sport"
+            aria-selected="false"
+          >
+            <img
+              src={entSport}
+              className="me-2"
+              height="25px"
+              alt="ent-skull"
+            />
+            Sports & Recreaction
           </button>
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
+        {/* Tabs Content */}
+        <div
+          class="border-beige-content tab-content p-lg-5"
+          id="fun-tabContent"
+        >
+          {/* Entertainment */}
           <div
             class="tab-pane fade show active"
-            id="v-pills-home"
+            id="fun-entertainment"
             role="tabpanel"
-            aria-labelledby="v-pills-home-tab"
+            aria-labelledby="fun-entertainment-tab"
           >
-            ...
+            <TabContent></TabContent>
           </div>
+          {/* Dining */}
           <div
             class="tab-pane fade"
-            id="v-pills-profile"
+            id="fun-dining"
             role="tabpanel"
-            aria-labelledby="v-pills-profile-tab"
+            aria-labelledby="fun-dining-tab"
           >
-            ...
+            <TabContent></TabContent>
           </div>
+          {/* Bars & Lounge */}
           <div
             class="tab-pane fade"
-            id="v-pills-messages"
+            id="fun-bars"
             role="tabpanel"
-            aria-labelledby="v-pills-messages-tab"
+            aria-labelledby="fun-bars-tab"
           >
-            ...
+            <TabContent></TabContent>
           </div>
+          {/* Shopping */}
           <div
             class="tab-pane fade"
-            id="v-pills-settings"
+            id="fun-shopping"
             role="tabpanel"
-            aria-labelledby="v-pills-settings-tab"
+            aria-labelledby="fun-shopping-tab"
           >
-            ...
+            <TabContent></TabContent>
+          </div>
+          {/* Beauty & Wellness */}
+          <div
+            class="tab-pane fade"
+            id="fun-beauty"
+            role="tabpanel"
+            aria-labelledby="fun-beauty-tab"
+          >
+            <TabContent></TabContent>
+          </div>
+          {/* Sports & Rec */}
+          <div
+            class="tab-pane fade"
+            id="fun-sport"
+            role="tabpanel"
+            aria-labelledby="fun-sport-tab"
+          >
+            <TabContent></TabContent>
           </div>
         </div>
       </div>
