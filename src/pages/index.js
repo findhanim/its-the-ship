@@ -29,14 +29,14 @@ const IndexPage = () => {
   return (
     <main>
       <Chatbot></Chatbot>
-      <header className="container-fluid bg-header">
+      <header className="bg-header container-fluid pt-5">
         <Navigation></Navigation>
         {/* Header */}
-        <section className="d-lg-flex align-items-center pt-5 mt-3 mx-5">
-          <div className="col-lg-4 d-flex justify-content-lg-start justify-content-center ms-4">
+        <section className="d-lg-flex align-items-center pt-5 mx-5">
+          <div className="col-lg-4 d-flex justify-content-lg-start justify-content-center mt-lg-5 ms-4">
             <img src={headerIts} height="297px" alt="header-its" />
           </div>
-          <div className="col-lg-7 text-center pt-5">
+          <div className="col-lg-7 text-center pt-5 mt-5">
             <p className="t1 mt-lg-0 mt-5">Deeper, Darker, Dirtier</p>
             <h2>
               Asia's largest festival at sea returns with our spookiest edition.

@@ -194,6 +194,10 @@ b {
 /* ---------- COMPONENTS ---------- */
 
 /* Navigation */
+.bg-navbar {
+  background-color: var(--accent);
+  /* transition: 0.2s; */
+}
 .nav-link {
   color: var(--beige);
   font-size: 16px;
@@ -242,7 +246,7 @@ b {
   margin-top: -15%;
 }
 
-/* Header */
+/* Headliners */
 .bg-headliners {
   background-image: url(../assets/images/background/bg-headliners.png);
   background-position: absolute;
