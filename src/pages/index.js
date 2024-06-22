@@ -1,20 +1,23 @@
 import * as React from 'react'
 import { Button } from 'react-bootstrap'
 // Components
-import CardProgress from '../components/CardProgress'
 import CardInfo from '../components/CardInfo'
+import CardProgress from '../components/CardProgress'
 import Navigation from '../components/Navigation'
+import SectionInstagram from '../components/SectionInstagram'
 import SectionLineups from '../components/SectionLineups'
 import SectionReels from '../components/SectionReels'
 import Tabs from '../components/Tabs'
 // Assets
 import dividerDrip from '../assets/images/png/divider-drip.png'
 import gifEye from '../assets/images/gif/gif-eye.gif'
+import gifSkulls from '../assets/images/gif/gif-skulls.gif'
 import headerIts from '../assets/images/png/header-its.png'
 import headerCollage from '../assets/images/png/header-collage.png'
 import headerPhotoburn from '../assets/images/png/header-photoburn.png'
 import headlinersTitle from '../assets/images/image/headliners-title.png'
 import headlinersFrame from '../assets/images/png/headliners-frame.png'
+import SectionGallery from '../components/SectionGallery'
 
 const IndexPage = () => {
   return (
@@ -22,7 +25,7 @@ const IndexPage = () => {
       <div className="container-fluid bg-header">
         <Navigation></Navigation>
 
-        <div className="container py-5">
+        <div className="container my-5">
           {/* Header */}
           <header className="d-lg-flex align-items-center pt-5">
             <div className="col-lg-5 d-flex justify-content-lg-start justify-content-center">
@@ -95,7 +98,7 @@ const IndexPage = () => {
             <Tabs></Tabs>
           </section>
           {/* Cabins */}
-          <section className="py-5">
+          <section className="pt-5">
             <div className="d-lg-flex col-lg-12 my-4 align-items-center">
               {/* Description */}
               <div className="col-lg-6">
@@ -138,6 +141,7 @@ const IndexPage = () => {
             </div>
           </section>
         </div>
+
         {/* Past Lineups */}
         <section className="bg-red d-lg-flex justify-content-center align-items-center py-5">
           <div className="container col-lg-10 row">
@@ -146,6 +150,35 @@ const IndexPage = () => {
           </div>
         </section>
         <img src={dividerDrip} width="100%" alt="divider-drip" />
+        {/* Tagline */}
+        <section className="bg-tagline d-lg-flex align-items-end justify-content-center mb-5">
+          <div className="row text-center">
+            <h1>DEEPER, DARKER, DIRTIER</h1>
+            <p className="t2">
+              No tricks, just treats on Asia's Largest Festival at Sea
+            </p>
+            <div>
+              <Button className="outline mt-3">Book A Cabin</Button>
+            </div>
+          </div>
+        </section>
+
+        <div className="container py-5">
+          {/* Instagram Posts */}
+          <section className="offset-lg-1 col-lg-10 mt-4 p-5 border border-2 border-danger rounded-4">
+            <div className="d-lg-flex justify-content-center mb-4">
+              <img src={gifSkulls} height="180px" alt="gif-skulls" />
+            </div>
+            <h1 className="text-center pb-4">Follow us on Instagram</h1>
+            <SectionInstagram></SectionInstagram>
+          </section>
+          {/* Gallery */}
+          <div className="header-web"></div>
+          <section className="offset-lg-1 col-lg-10 gallery-section pb-5">
+            <h1 className="text-center pb-4">Gallery</h1>
+            <SectionGallery></SectionGallery>
+          </section>
+        </div>
       </div>
     </main>
   )

@@ -2,6 +2,7 @@
   --accent: #c22400;
   --beige: #ffecc7;
   --black: #000000;
+  --gray: #6d8391;
   --white: #ffffff;
 }
 
@@ -130,19 +131,33 @@ b {
 /* Button */
 .btn {
   background-color: var(--accent);
-  border: var(--accent);
+  border: 2px solid var(--accent);
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 20px;
-  padding: 10px 16px;
+  padding: 8px 14px;
   text-transform: uppercase;
 }
 .btn:hover {
   background-color: transparent;
   border: 2px solid var(--accent);
+}
+.outline {
+  background-color: transparent !important;
+  border: 2px solid var(--gray) !important;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 20px;
   padding: 8px 14px;
+  text-transform: uppercase;
+}
+.outline:hover {
+  background-color: rgba(109, 131, 145, 0.4) !important;
+  border: 2px solid var(--gray) !important;
 }
 
 /* Variant Danger */
@@ -210,4 +225,19 @@ b {
 /* Past Lineups */
 .bg-red {
   background-color: var(--accent);
+}
+
+/* Tagline */
+.bg-tagline {
+  background-image: url(../assets/images/background/bg-tagline.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 520px;
+  margin-top: -10%;
+}
+
+/* Gallery */
+.gallery-section {
+  margin-top: -25%;
 }
