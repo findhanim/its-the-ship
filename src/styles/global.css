@@ -2,6 +2,7 @@
   --accent: #c22400;
   --beige: #ffecc7;
   --black: #000000;
+  --darkGray: #262525;
   --gray: #6d8391;
   --white: #ffffff;
 }
@@ -63,6 +64,11 @@ h5 {
   font-size: 24px;
   line-height: 40px;
 }
+h6 {
+  font-family: 'Evil Dead';
+  font-size: 20px;
+  line-height: 36px;
+}
 
 /* Text */
 .t1 {
@@ -85,6 +91,10 @@ h5 {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+.t5 {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /* Font Styling */
@@ -171,6 +181,16 @@ b {
   color: var(--accent) !important;
 }
 
+/* Variant Muted */
+.border-muted {
+  border-color: var(--gray) !important;
+}
+
+/* Variant Dark Gray*/
+.border-darkgray {
+  border: 10px solid var(--darkGray) !important;
+}
+
 /* ---------- COMPONENTS ---------- */
 
 /* Navigation */
@@ -215,8 +235,8 @@ b {
   margin-top: -13%;
   margin-left: -12%;
 }
-.intro-section {
-  margin-top: -12%;
+.section-intro {
+  margin-top: 8%;
 }
 .header-collage {
   margin-top: -15%;
@@ -238,6 +258,26 @@ b {
 }
 
 /* Gallery */
-.gallery-section {
-  margin-top: -25%;
+.section-gallery {
+  margin-top: -28%;
+}
+
+/* Newsletter */
+.bg-newsletter {
+  background-image: url(../assets/images/background/bg-newsletter.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-newsletter {
+  margin-top: -7%;
+}
+
+/* Footer */
+.bg-footer {
+  background-image: url(../assets/images/background/bg-footer.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
 }

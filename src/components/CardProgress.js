@@ -4,9 +4,9 @@ export default function CardProgress() {
   return (
     <main
       id="cabin-booked"
-      className="col-lg-5 border border-2 border-white rounded-4 p-3"
+      className="border border-2 border-muted rounded-4 p-3"
     >
-      <div className=" d-flex">
+      <div className="d-flex">
         <div className="col-10">
           <h3>Cabins Booked</h3>
           <p>for Early Spook 2</p>
