@@ -1,9 +1,6 @@
-import React from "react";
-import { Button } from "react-bootstrap";
-// Assets
-import CabinInterior from "../assets/images/image/cabin-interior.png";
+import React from 'react'
 
-export default function CabinBooked() {
+export default function CardProgress() {
   return (
     <div
       id="cabin-booked"
@@ -31,5 +28,5 @@ export default function CabinBooked() {
         ></div>
       </div>
     </div>
-  );
+  )
 }

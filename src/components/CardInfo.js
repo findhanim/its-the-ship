@@ -1,9 +1,9 @@
-import React from "react";
-import { Button } from "react-bootstrap";
+import React from 'react'
+import { Button } from 'react-bootstrap'
 // Assets
-import CabinInterior from "../assets/images/image/cabin-interior.png";
+import CabinInterior from '../assets/images/image/cabin-interior.png'
 
-export default function CabinInfo() {
+export default function CardInfo() {
   return (
     <div className="col-lg-4 border border-2 border-danger rounded-4 p-3">
       <img src={CabinInterior} className="col-12 pb-3" alt="its-logo" />
@@ -29,5 +29,5 @@ export default function CabinInfo() {
       </p>
       <Button className="col-12">Book A Cabin</Button>
     </div>
-  );
+  )
 }

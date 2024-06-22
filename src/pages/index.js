@@ -1,9 +1,10 @@
 import * as React from 'react'
 import { Button } from 'react-bootstrap'
 // Components
-import CabinBooked from '../components/CabinBooked'
-import CabinInfo from '../components/CabinInfo'
+import CardProgress from '../components/CardProgress'
+import CardInfo from '../components/CardInfo'
 import Navigation from '../components/Navigation'
+import Tabs from '../components/Tabs'
 // Assets
 import headerIts from '../assets/images/png/header-its.png'
 import headerCollage from '../assets/images/png/header-collage.png'
@@ -12,6 +13,7 @@ import headlinersTitle from '../assets/images/image/headliners-title.png'
 import headlinersFrame from '../assets/images/png/headliners-frame.png'
 import thumbnail from '../assets/images/image/thumbnail-dummy.png'
 import dividerDrip from '../assets/images/png/divider-drip.png'
+import LogoGroup from '../components/LogoGroup'
 
 const IndexPage = () => {
   return (
@@ -89,97 +91,7 @@ const IndexPage = () => {
               <Button>Book A Cabin</Button>
             </div>
             {/* Tabs */}
-            <div class="d-flex align-items-start">
-              <div
-                class="nav flex-column nav-pills me-3"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="nav-link active"
-                  id="v-pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-home"
-                  aria-selected="true"
-                >
-                  Entertainment
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-profile"
-                  aria-selected="false"
-                >
-                  Profile
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-messages-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-messages"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-messages"
-                  aria-selected="false"
-                >
-                  Messages
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-settings-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-settings"
-                  aria-selected="false"
-                >
-                  Settings
-                </button>
-              </div>
-              <div class="tab-content" id="v-pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="v-pills-home"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-home-tab"
-                >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-profile-tab"
-                >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-messages"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-messages-tab"
-                >
-                  ...
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-settings"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-settings-tab"
-                >
-                  ...
-                </div>
-              </div>
-            </div>
+            <Tabs></Tabs>
           </section>
           {/* Previous Reels */}
           <section className="py-5">
@@ -232,14 +144,14 @@ const IndexPage = () => {
               </div>
               {/* Availibility */}
               <div className="col-lg-12 offset-lg-1">
-                <CabinBooked></CabinBooked>
+                <CardProgress></CardProgress>
               </div>
             </div>
             {/* Selections */}
             <div className="d-lg-flex">
-              <CabinInfo></CabinInfo>
-              <CabinInfo></CabinInfo>
-              <CabinInfo></CabinInfo>
+              <CardInfo></CardInfo>
+              <CardInfo></CardInfo>
+              <CardInfo></CardInfo>
             </div>
             <div className="d-flex justify-content-center my-4">
               <Button>View All Cabins</Button>
@@ -247,8 +159,11 @@ const IndexPage = () => {
           </section>
         </div>
         {/* Past Lineups */}
-        <section className="bg-red d-lg-flex justify-content-center py-5">
-          <h2 className="mt-4">Past Lineups</h2>
+        <section className="bg-red d-lg-flex justify-content-center align-items-center py-5">
+          <div className="container col-lg-10 row">
+            <h2 className="mt-4 text-center">Past Lineups</h2>
+            <LogoGroup></LogoGroup>
+          </div>
         </section>
         <img src={dividerDrip} width="100%" alt="divider-drip" />
       </div>
