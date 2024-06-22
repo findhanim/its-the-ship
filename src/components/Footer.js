@@ -1,21 +1,32 @@
 import React from 'react'
 // Assets
+import fbLogo from '../assets/images/svg/facebook.svg'
 import footerTrooper from '../assets/images/png/footer-trooper.png'
-import ITSLogo from '../assets/images/logo/logo-its-white.png'
-import whatsapp from '../assets/images/png/icon-whatsapp.png'
+import igLogo from '../assets/images/svg/instagram.svg'
+import itsLogo from '../assets/images/logo/logo-its-white.png'
+import twitterLogo from '../assets/images/svg/twitter.svg'
 
 export default function Footer() {
   return (
-    <main className="container-fluid">
+    <main className="container-fluid mb-5 pb-4">
       <section className="d-lg-flex border-bottom border-2 border-white justify-content-between align-items-center px-5 pt-lg-3">
         <div className="col-lg-3">
-          <img src={ITSLogo} height="80px" alt="its-logo" />
+          <img src={itsLogo} height="80px" alt="its-logo" />
         </div>
         <div className="col-lg-6 d-flex justify-content-between">
           <h6>Socialise With Us</h6>
-          <span>/itstheship</span>
-          <span>/itstheship</span>
-          <span>/itstheshipasia</span>
+          <span>
+            <img src={igLogo} className="social-icon" alt="ig-logo" />
+            /itstheship
+          </span>
+          <span>
+            <img src={fbLogo} className="social-icon" alt="fb-logo" />
+            /itstheship
+          </span>
+          <span>
+            <img src={twitterLogo} className="social-icon" alt="twitter-logo" />
+            /itstheshipasia
+          </span>
         </div>
         <div className="col-lg-2 d-flex justify-content-end">
           <img src={footerTrooper} height="140px" alt="footer-trooper" />
@@ -32,9 +43,6 @@ export default function Footer() {
             Powered by <b>A.D</b>
           </span>
         </div>
-      </section>
-      <section className="d-lg-flex justify-content-end my-3">
-        <img src={whatsapp} height="56px" alt="footer-trooper" />
       </section>
     </main>
   )

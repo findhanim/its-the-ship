@@ -23,10 +23,12 @@ import headerCollage from '../assets/images/png/header-collage.png'
 import headerPhotoburn from '../assets/images/png/header-photoburn.png'
 import headlinersTitle from '../assets/images/image/headliners-title.png'
 import headlinersFrame from '../assets/images/png/headliners-frame.png'
+import Chatbot from '../components/Chatbot'
 
 const IndexPage = () => {
   return (
     <main>
+      <Chatbot></Chatbot>
       <header className="container-fluid bg-header">
         <Navigation></Navigation>
         {/* Header */}
@@ -172,7 +174,7 @@ const IndexPage = () => {
           <SectionGallery></SectionGallery>
         </section>
         {/* Countdown */}
-        <section className="d-lg-flex justify-content-between align-items-center py-5 my-5">
+        <section className="d-lg-flex justify-content-between align-items-center py-5 mb-3">
           <div className="col-lg-5">
             <h3>Counting down to a Hauntingly Good Time</h3>
             <p>Ship sails in...</p>
@@ -190,11 +192,11 @@ const IndexPage = () => {
 
       <footer className="container-fluid bg-footer d-flex align-items-end">
         <section className="row">
-          <div className="text-center mb-5 pb-5">
+          <div className="text-center mb-5">
             <img src={footerRated} height="141px" alt="footer-rated" />
             <h3 className="my-4">
               #RatedArghh
-              <span className="border border-2 border-danger rounded-3 px-2 ms-2">
+              <span className="border border-2 border-danger rounded-3 px-1 ms-1">
                 ItsTheShip.com
               </span>
             </h3>
