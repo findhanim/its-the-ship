@@ -32,7 +32,7 @@ const IndexPage = () => {
       <header className="container-fluid bg-header">
         <Navigation></Navigation>
         {/* Header */}
-        <section className="d-lg-flex align-items-center pt-5 mt-5 mx-5">
+        <section className="d-lg-flex align-items-center pt-5 mt-3 mx-5">
           <div className="col-lg-4 d-flex justify-content-lg-start justify-content-center ms-4">
             <img src={headerIts} height="297px" alt="header-its" />
           </div>
@@ -50,39 +50,40 @@ const IndexPage = () => {
         <div className="header-web"></div>
       </header>
 
+      {/* Introduction */}
+      <section className="container section-intro d-lg-flex pb-5">
+        <div className="header-collage col-lg-3 ms-2">
+          <img src={headerCollage} height="460px" alt="header-collage" />
+        </div>
+        <div className="col-lg-4 ms-5">
+          <p className="t3">It's NOT JUST A PARTY</p>
+          <h1>IT'S THE SHIP, WELCOME HOME BABY</h1>
+          <p className="py-2">
+            Ahoy Shipmates! IT'S THE SHIP is Asia's Largest Festival at Sea,
+            bringing you a batship festival shipcation experience unlike any
+            other. Hop aboard our haunted vessel, The Genting Dream, for the
+            most hair-raising 3D2N Halloween festival at sea. Expect a
+            spooktastic adventure this November with round the clock DJ Sets,
+            Theme Parties, Side Activities and many more.
+          </p>
+          <Button>Book A Cabin</Button>
+        </div>
+        <div className="col-lg-4">
+          <img src={headerPhotoburn} height="420px" alt="header-photoburn" />
+        </div>
+      </section>
+      {/* Headliners */}
+      <section className="bg-headliners py-5 mt-2">
+        <div className="d-flex justify-content-center">
+          <img src={headlinersTitle} height="245px" alt="headliners-title" />
+        </div>
+        <div className="d-flex justify-content-center pt-5">
+          <img src={headlinersFrame} height="468px" alt="headliners-title" />
+        </div>
+        <p className="t2 text-center">With many more to be announced</p>
+      </section>
+
       <div className="container my-5">
-        {/* Introduction */}
-        <section className="section-intro d-lg-flex pb-5">
-          <div className="header-collage col-lg-4">
-            <img src={headerCollage} height="500px" alt="header-collage" />
-          </div>
-          <div className="col-lg-4">
-            <p className="t3">It's NOT JUST A PARTY</p>
-            <h1>IT'S THE SHIP, WELCOME HOME BABY</h1>
-            <p className="py-2">
-              Ahoy Shipmates! IT'S THE SHIP is Asia's Largest Festival at Sea,
-              bringing you a batship festival shipcation experience unlike any
-              other. Hop aboard our haunted vessel, The Genting Dream, for the
-              most hair-raising 3D2N Halloween festival at sea. Expect a
-              spooktastic adventure this November with round the clock DJ Sets,
-              Theme Parties, Side Activities and many more.
-            </p>
-            <Button>Book A Cabin</Button>
-          </div>
-          <div className="col-lg-4">
-            <img src={headerPhotoburn} height="461px" alt="header-photoburn" />
-          </div>
-        </section>
-        {/* Headliners */}
-        <section className="py-5">
-          <div className="d-flex justify-content-center">
-            <img src={headlinersTitle} height="245px" alt="headliners-title" />
-          </div>
-          <div className="d-flex justify-content-center pt-5">
-            <img src={headlinersFrame} height="468px" alt="headliners-title" />
-          </div>
-          <p className="t2 text-center">With many more to be announced</p>
-        </section>
         {/* What To Expect */}
         <section className="py-5">
           <div className="d-lg-flex justify-content-between align-items-center text-danger">
@@ -168,7 +169,7 @@ const IndexPage = () => {
           <SectionInstagram></SectionInstagram>
         </section>
         {/* Gallery */}
-        <div className="header-web"></div>
+        <div className="gallery-web"></div>
         <section className="section-gallery pb-5">
           <h1 className="text-center pb-4">Gallery</h1>
           <SectionGallery></SectionGallery>

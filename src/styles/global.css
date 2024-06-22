@@ -232,14 +232,23 @@ b {
   background-repeat: no-repeat;
   background-size: contain;
   height: 640px;
-  margin-top: -13%;
-  margin-left: -12%;
+  margin-top: -14%;
+  margin-left: -4%;
 }
 .section-intro {
   margin-top: 8%;
 }
 .header-collage {
   margin-top: -15%;
+}
+
+/* Header */
+.bg-headliners {
+  background-image: url(../assets/images/background/bg-headliners.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 970px;
 }
 
 /* Past Lineups */
@@ -260,6 +269,15 @@ b {
 /* Gallery */
 .section-gallery {
   margin-top: -28%;
+}
+.gallery-web {
+  background-image: url(../assets/images/png/header-web.png);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 640px;
+  margin-top: -16%;
+  margin-left: -14%;
 }
 
 /* Newsletter */
