@@ -5,7 +5,7 @@ import CabinInterior from '../assets/images/image/cabin-interior.png'
 
 export default function CardInfo() {
   return (
-    <main className="col-lg-4">
+    <main className="">
       <div className="border border-2 border-danger rounded-4 p-3">
         <img src={CabinInterior} className="col-12 pb-3" alt="its-logo" />
         <h5 className="border-bottom border-2 border-danger pb-2">Interior</h5>

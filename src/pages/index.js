@@ -29,14 +29,14 @@ const IndexPage = () => {
   return (
     <main>
       <Chatbot></Chatbot>
-      <header className="bg-header container-fluid pt-5">
+      <header className="bg-header container-lg-fluid pt-5">
         <Navigation></Navigation>
         {/* Header */}
         <section className="d-lg-flex align-items-center pt-5 mx-5">
-          <div className="col-lg-4 d-flex justify-content-lg-start justify-content-center mt-lg-5 ms-4">
-            <img src={headerIts} height="297px" alt="header-its" />
+          <div className="header-image col-lg-4 d-flex justify-content-lg-start justify-content-center mt-lg-5 ms-4">
+            <img src={headerIts} alt="header-its" />
           </div>
-          <div className="col-lg-7 text-center pt-5 mt-5">
+          <div className="col-lg-7 text-center pt-lg-5 mt-lg-5">
             <p className="t1 mt-lg-0 mt-5">Deeper, Darker, Dirtier</p>
             <h2>
               Asia's largest festival at sea returns with our spookiest edition.
@@ -51,11 +51,11 @@ const IndexPage = () => {
       </header>
 
       {/* Introduction */}
-      <section className="container section-intro d-lg-flex pb-5">
+      <section className="section-intro container d-lg-flex pb-5">
         <div className="header-collage col-lg-3 ms-2">
           <img src={headerCollage} height="460px" alt="header-collage" />
         </div>
-        <div className="col-lg-4 ms-5">
+        <div className="col-lg-4 ms-lg-5 mt-4 mt-lg-0">
           <p className="t3">It's NOT JUST A PARTY</p>
           <h1>IT'S THE SHIP, WELCOME HOME BABY</h1>
           <p className="py-2">
@@ -69,20 +69,20 @@ const IndexPage = () => {
           <Button>Book A Cabin</Button>
         </div>
         <div className="col-lg-4">
-          <img src={headerPhotoburn} height="420px" alt="header-photoburn" />
+          <img src={headerPhotoburn} height="480px" alt="header-photoburn" />
         </div>
       </section>
       {/* Headliners */}
       <section className="bg-headliners py-5 mt-2">
-        <div className="d-flex justify-content-center">
-          <img src={headlinersTitle} height="245px" alt="headliners-title" />
+        <div className="headliners-title d-flex justify-content-center">
+          <img src={headlinersTitle} alt="headliners-title" />
         </div>
-        <div className="d-flex justify-content-center pt-5">
-          <img src={headlinersFrame} height="468px" alt="headliners-title" />
+        <div className="headliners-frame d-flex justify-content-center pt-5">
+          <img src={headlinersFrame} alt="headliners-title" />
         </div>
         <p className="t2 text-center">With many more to be announced</p>
       </section>
-      {/* What To Expect */}
+      {/* Fun Activities */}
       <section className="border-beige mt-5">
         <div className="container d-lg-flex justify-content-between py-4 align-items-center text-danger">
           <h2>What to expect on board</h2>
@@ -113,10 +113,16 @@ const IndexPage = () => {
             </div>
           </div>
           {/* Selections */}
-          <div className="d-lg-flex">
-            <CardInfo></CardInfo>
-            <CardInfo></CardInfo>
-            <CardInfo></CardInfo>
+          <div className="row g-4 gy-lg-0">
+            <div className="col-lg-4">
+              <CardInfo></CardInfo>
+            </div>
+            <div className="col-lg-4">
+              <CardInfo></CardInfo>
+            </div>
+            <div className="col-lg-4">
+              <CardInfo></CardInfo>
+            </div>
           </div>
           <div className="d-flex justify-content-center my-4">
             <Button>View All Cabins</Button>
@@ -128,11 +134,11 @@ const IndexPage = () => {
           <div className="d-lg-flex justify-content-end">
             <img src={gifEye} height="253px" alt="gif-eye" />
           </div>
-          <h3 className="d-lg-flex justify-content-center pb-5">
+          <h3 className="d-lg-flex justify-content-center pb-lg-5 pb-3">
             I KNOW WHAT YOU DID LAST SAILINGS…
           </h3>
           <SectionReels></SectionReels>
-          <div className="d-lg-flex justify-content-center">
+          <div className="d-flex justify-content-center">
             <Button>Book A Cabin</Button>
           </div>
         </section>
@@ -161,15 +167,15 @@ const IndexPage = () => {
 
       <div className="container offset-lg-1 col-lg-10 py-5">
         {/* Instagram Posts */}
-        <section className="mt-4 p-5 border border-2 border-danger rounded-4">
-          <div className="d-lg-flex justify-content-center mb-4">
+        <section className="mt-4 p-lg-5 px-3 py-5 border border-2 border-danger rounded-4">
+          <div className="d-flex justify-content-center mb-4">
             <img src={gifSkulls} height="180px" alt="gif-skulls" />
           </div>
           <h1 className="text-center pb-4">Follow us on Instagram</h1>
           <SectionInstagram></SectionInstagram>
         </section>
         {/* Gallery */}
-        <div className="gallery-web"></div>
+        <div className="gallery-web d-lg-block d-none"></div>
         <section className="section-gallery pb-5">
           <h1 className="text-center pb-4">Gallery</h1>
           <SectionGallery></SectionGallery>

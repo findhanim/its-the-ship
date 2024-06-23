@@ -30,7 +30,7 @@ export default function Navigation() {
         }
       >
         {/* Logo/Home */}
-        <Navbar.Brand href="#home" className="col-lg-4">
+        <Navbar.Brand href="#home" className="col-lg-4 ms-lg-0 ms-3">
           <img
             src={itsLogo}
             height={bgColor ? '36px' : '48px'}
