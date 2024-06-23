@@ -257,7 +257,7 @@ b {
 }
 
 /* Card Countdown  */
-.vr {
+.card-countdown .vr {
   opacity: 1 !important;
   border: 1px solid var(--accent) !important;
 }
@@ -453,6 +453,9 @@ b {
 }
 
 @media only screen and (max-width: 600px) {
+  .bg-footer {
+    height: 900px;
+  }
   .footer-rated {
     height: 72px;
   }

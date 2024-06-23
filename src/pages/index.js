@@ -199,7 +199,7 @@ const IndexPage = () => {
         </section>
       </div>
 
-      <footer className="container-fluid bg-footer d-flex align-items-end">
+      <footer className="bg-footer d-flex justify-content-center align-items-end">
         <section className="row">
           <div className="text-center mb-5">
             <img
