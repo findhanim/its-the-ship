@@ -25,8 +25,8 @@ export default function Navigation() {
         expand="lg"
         className={
           bgColor
-            ? 'container-lg d-lg-flex justify-content-between pt-lg-1'
-            : 'container-lg d-lg-flex justify-content-between pt-lg-3'
+            ? 'navbar-dark container-lg d-lg-flex justify-content-between pt-lg-1'
+            : 'navbar-dark container-lg d-lg-flex justify-content-between pt-lg-3'
         }
       >
         {/* Logo/Home */}
@@ -38,7 +38,15 @@ export default function Navigation() {
           />
         </Navbar.Brand>
         {/* Booking - Mobile View */}
-        <Button className="d-block d-lg-none">Book A Cabin</Button>
+        <Button
+          className={
+            bgColor
+              ? 'd-lg-none d-block ms-4 outline'
+              : 'd-lg-none d-block ms-4'
+          }
+        >
+          Book A Cabin
+        </Button>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           id="basic-navbar-nav"

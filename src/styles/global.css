@@ -141,8 +141,8 @@ b {
 
 /* Button */
 .btn {
-  background-color: var(--accent);
-  border: 2px solid var(--accent);
+  background-color: var(--accent) !important;
+  border: 2px solid var(--accent) !important;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -152,8 +152,7 @@ b {
   text-transform: uppercase;
 }
 .btn:hover {
-  background-color: transparent;
-  border: 2px solid var(--accent);
+  background-color: transparent !important;
 }
 .outline {
   background-color: transparent !important;
@@ -169,6 +168,11 @@ b {
 .outline:hover {
   background-color: rgba(109, 131, 145, 0.4) !important;
   border: 2px solid var(--gray) !important;
+}
+
+/* Navbar */
+.navbar-toggler {
+  border: none !important;
 }
 .nav-pills .nav-link {
   color: var(--accent) !important;

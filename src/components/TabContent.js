@@ -1,13 +1,14 @@
 import React from 'react'
 // Assets
 import entArcade from '../assets/images/image/entertainment-arcade.jpg'
+import entChevron from '../assets/images/png/entertainment-chevron.png'
 import entSkull from '../assets/images/png/entertainment-skull.png'
 import entTheatre from '../assets/images/image/entertainment-theatre.jpg'
 import entZouk from '../assets/images/image/entertainment-zouk.jpg'
 
 export default function TabContent() {
   return (
-    <main>
+    <main className="mx-5">
       {/* Description */}
       <div className="d-lg-flex align-items-center">
         <img src={entSkull} height="100px" alt="ent-skull" />
@@ -34,6 +35,9 @@ export default function TabContent() {
           <p className="t4">Zouk</p>
           <img src={entZouk} width="100%" alt="ent-zouk" />
         </div>
+      </div>
+      <div className="d-flex justify-content-end mt-4">
+        <img src={entChevron} height="30px" alt="ent-chevron" />
       </div>
     </main>
   )
