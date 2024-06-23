@@ -448,6 +448,16 @@ b {
   background-size: cover;
   height: 720px;
 }
+.footer-rated {
+  height: 141px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-rated {
+    height: 72px;
+  }
+}
+
 /* Social Medias */
 .social-icon {
   background-color: var(--beige);

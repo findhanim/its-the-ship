@@ -202,7 +202,11 @@ const IndexPage = () => {
       <footer className="container-fluid bg-footer d-flex align-items-end">
         <section className="row">
           <div className="text-center mb-5">
-            <img src={footerRated} height="141px" alt="footer-rated" />
+            <img
+              src={footerRated}
+              className="footer-rated"
+              alt="footer-rated"
+            />
             <h3 className="my-4">
               #RatedArghh
               <span className="border border-2 border-danger rounded-3 px-1 ms-1">
