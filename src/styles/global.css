@@ -256,6 +256,20 @@ b {
   line-height: 8px;
 }
 
+/* Card Countdown  */
+.vr {
+  opacity: 1 !important;
+  border: 1px solid var(--accent) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-countdown h1 {
+    font-size: 56px;
+    line-height: 48px;
+    margin-top: 12px;
+  }
+}
+
 /* ---------- MISC STYLING ---------- */
 
 /* Header */
@@ -333,8 +347,8 @@ b {
   border-top: 10px solid var(--beige);
 }
 .border-beige-tabs {
-  border-top: 10px solid var(--beige);
   border-bottom: 10px solid var(--beige);
+  border-top: 10px solid var(--beige);
 }
 .border-beige-content {
   border-left: 10px solid var(--beige);
@@ -345,6 +359,13 @@ b {
   background-color: var(--accent);
 }
 
+@media only screen and (max-width: 600px) {
+  .border-beige-content {
+    border-left: none;
+    border-top: 10px solid var(--beige);
+  }
+}
+
 /* Tagline */
 .bg-tagline {
   background-image: url(../assets/images/background/bg-tagline.png);
@@ -353,6 +374,24 @@ b {
   background-size: cover;
   height: 520px;
   margin-top: -10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-tagline {
+    background-position: center;
+    height: 500px;
+  }
+}
+
+/* Instagram Posts */
+.ig-skulls {
+  height: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ig-skulls {
+    height: 125px;
+  }
 }
 
 /* Gallery */
@@ -386,7 +425,19 @@ b {
   margin-top: -7%;
 }
 .border-darkgray {
-  border: 10px solid var(--darkGray);
+  border: 10px solid var(--darkGray) !important;
+}
+.newsletter-duck {
+  height: 164px;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-newsletter {
+    margin-top: -9%;
+  }
+  .newsletter-duck {
+    height: 125px;
+  }
 }
 
 /* Footer */

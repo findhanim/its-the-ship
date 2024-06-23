@@ -52,7 +52,7 @@ const IndexPage = () => {
 
       {/* Introduction */}
       <section className="section-intro container d-lg-flex pb-5">
-        <div className="header-collage col-lg-3 ms-2">
+        <div className="header-collage col-lg-3 ms-lg-2 ms-5">
           <img src={headerCollage} height="460px" alt="header-collage" />
         </div>
         <div className="col-lg-4 ms-lg-5 mt-4 mt-lg-0">
@@ -84,7 +84,7 @@ const IndexPage = () => {
       </section>
       {/* Fun Activities */}
       <section className="border-beige mt-5">
-        <div className="container d-lg-flex justify-content-between py-4 align-items-center text-danger">
+        <div className="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center py-4 align-items-center text-danger">
           <h2>What to expect on board</h2>
           <Button>Book A Cabin</Button>
         </div>
@@ -94,12 +94,12 @@ const IndexPage = () => {
 
       <div className="container my-5">
         {/* Cabins */}
-        <section className="pt-5">
+        <section className="pt-lg-5">
           <div className="d-lg-flex col-lg-12 my-4 align-items-center">
             {/* Description */}
             <div className="col-lg-6">
-              <h1>Cabins</h1>
-              <p>
+              <h1 className="text-lg-start text-center">Cabins</h1>
+              <p className="text-lg-start text-center">
                 Home away from home, your cabin is your entry ticket into IT'S
                 THE SHIP's erie adventure on the high seas for a hauntingly good
                 time! Your cabin bookings includes access to your accommodation,
@@ -108,7 +108,7 @@ const IndexPage = () => {
               </p>
             </div>
             {/* Availibility */}
-            <div className="col-lg-5 offset-lg-1">
+            <div className="col-lg-5 offset-lg-1 py-3 py-lg-0">
               <CardProgress></CardProgress>
             </div>
           </div>
@@ -134,7 +134,7 @@ const IndexPage = () => {
           <div className="d-lg-flex justify-content-end">
             <img src={gifEye} height="253px" alt="gif-eye" />
           </div>
-          <h3 className="d-lg-flex justify-content-center pb-lg-5 pb-3">
+          <h3 className="d-flex text-lg-start text-center pb-lg-5 pb-3">
             I KNOW WHAT YOU DID LAST SAILINGS…
           </h3>
           <SectionReels></SectionReels>
@@ -153,7 +153,7 @@ const IndexPage = () => {
       </section>
       <img src={dividerDrip} width="100%" alt="divider-drip" />
       {/* Tagline */}
-      <section className="bg-tagline d-lg-flex align-items-end justify-content-center mb-5">
+      <section className="bg-tagline d-flex align-items-end justify-content-center mb-5">
         <div className="row text-center">
           <h1>DEEPER, DARKER, DIRTIER</h1>
           <p className="t2">
@@ -167,9 +167,9 @@ const IndexPage = () => {
 
       <div className="container offset-lg-1 col-lg-10 py-5">
         {/* Instagram Posts */}
-        <section className="mt-4 p-lg-5 px-3 py-5 border border-2 border-danger rounded-4">
-          <div className="d-flex justify-content-center mb-4">
-            <img src={gifSkulls} height="180px" alt="gif-skulls" />
+        <section className="mt-4 p-lg-5 px-4 py-5 border border-2 border-danger rounded-4">
+          <div className="ig-skulls d-flex justify-content-center mb-4">
+            <img src={gifSkulls} alt="gif-skulls" />
           </div>
           <h1 className="text-center pb-4">Follow us on Instagram</h1>
           <SectionInstagram></SectionInstagram>
@@ -182,7 +182,7 @@ const IndexPage = () => {
         </section>
         {/* Countdown */}
         <section className="d-lg-flex justify-content-between align-items-center py-5 mb-3">
-          <div className="col-lg-5">
+          <div className="col-lg-5 text-lg-start text-center pb-lg-0 pb-4">
             <h3>Counting down to a Hauntingly Good Time</h3>
             <p>Ship sails in...</p>
           </div>
@@ -191,7 +191,9 @@ const IndexPage = () => {
           </div>
         </section>
         {/* Newsletter Sign Up */}
-        <img src={glowingDuck} height="164px" alt="glowing-duck" />
+        <div className="newsletter-duck d-flex justify-content-lg-start justify-content-center">
+          <img src={glowingDuck} alt="glowing-duck" />
+        </div>
         <section className="section-newsletter">
           <CardSubscribe></CardSubscribe>
         </section>

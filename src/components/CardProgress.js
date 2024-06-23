@@ -6,13 +6,13 @@ export default function CardProgress() {
       id="cabin-booked"
       className="border border-2 border-muted rounded-4 p-3"
     >
-      <div className="d-flex">
-        <div className="col-10">
+      <div className="d-lg-flex">
+        <div className="col-lg-10 text-lg-start text-center">
           <h3>Cabins Booked</h3>
           <p>for Early Spook 2</p>
         </div>
-        <div className="col-2 d-flex justify-content-end">
-          <h1>
+        <div className="col-lg-2 d-flex justify-content-lg-end justify-content-center">
+          <h1 className="py-lg-0 py-4">
             69<sup>%</sup>
           </h1>
         </div>
