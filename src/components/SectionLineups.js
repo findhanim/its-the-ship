@@ -9,48 +9,168 @@ import logoYellowClaw from '../assets/images/logo/logo-yellow-claw.png'
 export default function SectionLineups() {
   return (
     <main className="pt-5">
-      <div className="d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoMarlo} height="32px" alt="logo-marlo" />
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
+      {/* Desktop View */}
+      <div className="d-lg-block d-none">
+        {/* Row 1 */}
+        <div className="row d-flex align-items-center text-center py-3">
+          <div className="col">
+            <img src={logoMarlo} height="32px" alt="logo-marlo" />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="32px" alt="logo-showtek" />
+          </div>
+          <div className="col">
+            <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="32px" alt="logo-ub40" />
+          </div>
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="32px"
+              alt="logo-mike-williams"
+            />
+          </div>
+        </div>
+        {/* Row 2 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-5">
+          <div className="col">
+            <img src={logoShowtek} height="32px" alt="logo-showtek" />
+          </div>
+          <div className="col">
+            <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="32px" alt="logo-ub40" />
+          </div>
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="32px"
+              alt="logo-mike-williams"
+            />
+          </div>
+        </div>
+        {/* Row 3 */}
+        <div className="row d-flex align-items-center text-center py-3">
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="32px"
+              alt="logo-mike-williams"
+            />
+          </div>
+          <div className="col">
+            <img src={logoMarlo} height="32px" alt="logo-marlo" />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="32px" alt="logo-showtek" />
+          </div>
+          <div className="col">
+            <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="32px" alt="logo-ub40" />
+          </div>
+        </div>
+        {/* Row 4 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-5">
+          <div className="col">
+            <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="32px" alt="logo-ub40" />
+          </div>
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="32px"
+              alt="logo-mike-williams"
+            />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="32px" alt="logo-showtek" />
+          </div>
+        </div>
+        {/* Row 5 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-5 px-5">
+          <div className="col">
+            <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="32px" alt="logo-ub40" />
+          </div>
+        </div>
       </div>
-      <div className="col-lg-10 d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
-      </div>
-      <div className="d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoMarlo} height="32px" alt="logo-marlo" />
-        <img src={logoMarlo} height="32px" alt="logo-marlo" />
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-      </div>
-      <div className="col-lg-10 d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-      </div>
-      <div className="d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
-        <img src={logoMarlo} height="32px" alt="logo-marlo" />
-        <img src={logoMarlo} height="32px" alt="logo-marlo" />
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-      </div>
-      <div className="d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
-        <img src={logoShowtek} height="32px" alt="logo-showtek" />
-        <img src={logoYellowClaw} height="56px" alt="logo-yellow-claw" />
-      </div>
-      <div className="col-lg-4 d-lg-flex justify-content-between align-items-center py-3">
-        <img src={logoUb40} height="32px" alt="logo-ub40" />
-        <img src={logoMikeWilliams} height="32px" alt="logo-mike-williams" />
+
+      {/* Mobile View */}
+      <div className="d-lg-none d-block">
+        {/* Row 1 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-4">
+          <div className="col">
+            <img src={logoMarlo} height="20px" alt="logo-marlo" />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="20px" alt="logo-showtek" />
+          </div>
+          <div className="col">
+            <img src={logoYellowClaw} height="35px" alt="logo-yellow-claw" />
+          </div>
+        </div>
+        {/* Row 2 */}
+        <div className="row d-flex align-items-center text-center py-3">
+          <div className="col">
+            <img src={logoUb40} height="20px" alt="logo-ub40" />
+          </div>
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="20px"
+              alt="logo-mike-williams"
+            />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="20px" alt="logo-showtek" />
+          </div>
+        </div>
+        {/* Row 3 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-5">
+          <div className="col">
+            <img src={logoShowtek} height="20px" alt="logo-showtek" />
+          </div>
+          <div className="col">
+            <img src={logoYellowClaw} height="35px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="20px" alt="logo-ub40" />
+          </div>
+        </div>
+        {/* Row 4 */}
+        <div className="row d-flex align-items-center text-center py-3">
+          <div className="col">
+            <img
+              src={logoMikeWilliams}
+              height="20px"
+              alt="logo-mike-williams"
+            />
+          </div>
+          <div className="col">
+            <img src={logoMarlo} height="20px" alt="logo-marlo" />
+          </div>
+          <div className="col">
+            <img src={logoShowtek} height="20px" alt="logo-showtek" />
+          </div>
+        </div>
+        {/* Row 5 */}
+        <div className="row d-flex align-items-center text-center py-3 mx-5">
+          <div className="col">
+            <img src={logoYellowClaw} height="35px" alt="logo-yellow-claw" />
+          </div>
+          <div className="col">
+            <img src={logoUb40} height="20px" alt="logo-ub40" />
+          </div>
+        </div>
       </div>
     </main>
   )

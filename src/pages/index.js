@@ -52,8 +52,12 @@ const IndexPage = () => {
 
       {/* Introduction */}
       <section className="section-intro container d-lg-flex pb-5">
-        <div className="header-collage col-lg-3 ms-lg-2 ms-5">
-          <img src={headerCollage} height="460px" alt="header-collage" />
+        <div className="col-lg-3 ms-lg-2 ms-5">
+          <img
+            src={headerCollage}
+            className="header-collage"
+            alt="header-collage"
+          />
         </div>
         <div className="col-lg-4 ms-lg-5 mt-4 mt-lg-0">
           <p className="t3">It's NOT JUST A PARTY</p>
@@ -69,7 +73,11 @@ const IndexPage = () => {
           <Button>Book A Cabin</Button>
         </div>
         <div className="col-lg-4">
-          <img src={headerPhotoburn} height="480px" alt="header-photoburn" />
+          <img
+            src={headerPhotoburn}
+            className="header-photoburn"
+            alt="header-photoburn"
+          />
         </div>
       </section>
       {/* Headliners */}
@@ -85,7 +93,7 @@ const IndexPage = () => {
       {/* Fun Activities */}
       <section className="border-beige mt-5">
         <div className="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center py-4 align-items-center text-danger">
-          <h2>What to expect on board</h2>
+          <h2 className="text-lg-start text-center">What to expect on board</h2>
           <Button>Book A Cabin</Button>
         </div>
         {/* Tabs */}
