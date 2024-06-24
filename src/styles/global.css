@@ -17,6 +17,10 @@ body {
   font-weight: 400;
   overflow-x: hidden;
 }
+button {
+  background-color: transparent !important;
+  border: none !important;
+}
 
 /* ---------- TYPOGRAPHY ---------- */
 
@@ -77,16 +81,19 @@ h6 {
 }
 .t2 {
   font-size: 20px;
+  font-weight: 800;
   line-height: 28px;
   text-transform: uppercase;
 }
 .t3 {
   font-size: 16px;
+  font-weight: 600;
   line-height: 20px;
   text-transform: uppercase;
 }
 .t4 {
   font-size: 14px;
+  font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -105,7 +112,7 @@ h6 {
 /* Font Styling */
 b {
   font-family: 'Galano Grotesque';
-  font-weight: 900;
+  font-weight: 600;
 }
 .semi-bold {
   font-family: 'Galano Grotesque';
@@ -174,13 +181,24 @@ b {
   border: 2px solid var(--gray) !important;
 }
 
+/* Input */
+input {
+  background-color: transparent !important;
+  border: 2px solid var(--white) !important;
+}
+::placeholder {
+  color: #b6c1c8 !important;
+}
+
 /* Navbar */
 .navbar-toggler {
   border: none !important;
 }
 .nav-pills .nav-link {
   color: var(--accent) !important;
+  font-weight: 600 !important;
   padding: 14px !important;
+  text-transform: uppercase !important;
 }
 .nav-pills .active {
   background-color: transparent !important;
@@ -333,14 +351,14 @@ a {
 
 @media only screen and (max-width: 600px) {
   .bg-headliners {
-    height: 530px;
+    height: 550px;
   }
   .headliners-title {
-    width: 90%;
+    width: 70%;
     height: auto;
   }
   .headliners-frame {
-    width: 100%;
+    width: 95%;
     height: auto;
   }
 }

@@ -31,7 +31,7 @@ export default function CardSubscribe() {
               </p>
             </div>
           </div>
-          <Button>Subscribe</Button>
+          <Button className="col-lg-3 col-12">Subscribe</Button>
         </div>
       </div>
     </main>

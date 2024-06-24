@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 // Assets
 import chevronDown from '../assets/images/svg/chevron-down.svg'
 import itsLogo from '../assets/images/logo/logo-its-white.png'
@@ -65,9 +65,9 @@ export default function Navigation() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div href="#home" className="d-lg-none d-block" onClick={handleClick}>
+        <button className="d-lg-none d-block" onClick={handleClick}>
           <img src={navMenu} height="36px" alt="nav-menu" />
-        </div>
+        </button>
       </div>
       {/* Mobile Navigation Links */}
       {openMenu ? (
