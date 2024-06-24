@@ -82,11 +82,19 @@ const IndexPage = () => {
       </section>
       {/* Headliners */}
       <section className="bg-headliners py-5 mt-2">
-        <div className="headliners-title d-flex justify-content-center">
-          <img src={headlinersTitle} alt="headliners-title" />
+        <div className="d-flex justify-content-center">
+          <img
+            src={headlinersTitle}
+            className="headliners-title"
+            alt="headliners-title"
+          />
         </div>
-        <div className="headliners-frame d-flex justify-content-center pt-5">
-          <img src={headlinersFrame} alt="headliners-title" />
+        <div className="d-flex justify-content-center pt-5">
+          <img
+            src={headlinersFrame}
+            className="headliners-frame"
+            alt="headliners-title"
+          />
         </div>
         <p className="t2 text-center">With many more to be announced</p>
       </section>

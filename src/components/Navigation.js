@@ -27,7 +27,7 @@ export default function Navigation() {
   return (
     <main
       className={
-        bgColor ? 'bg-navbar fixed-top py-lg-2 py-2' : 'fixed-top py-lg-4 py-2'
+        bgColor ? 'nav-red fixed-top py-lg-2 py-2' : 'fixed-top py-lg-4 py-2'
       }
     >
       <div className="container d-flex justify-content-between">
@@ -71,7 +71,11 @@ export default function Navigation() {
       </div>
       {/* Mobile Navigation Links */}
       {openMenu ? (
-        <div className="bg-red d-lg-none d-block">
+        <div
+          className={
+            bgColor ? 'd-lg-none d-block' : 'nav-black d-lg-none d-block'
+          }
+        >
           <div className="row text-center pt-5">
             <a href="#about">
               The Ship
