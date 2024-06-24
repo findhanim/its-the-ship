@@ -237,14 +237,22 @@ b {
   /* transition: 0.1s; */
 }
 
-.nav-link {
+a {
   color: var(--beige) !important;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   line-height: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  text-decoration: none;
   text-transform: uppercase;
-  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    margin-bottom: 30px;
+  }
 }
 
 /* Cabin Section */

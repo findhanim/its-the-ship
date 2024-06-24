@@ -3,12 +3,13 @@ import { Navbar, Nav, Button } from 'react-bootstrap'
 // Assets
 import chevronDown from '../assets/images/svg/chevron-down.svg'
 import itsLogo from '../assets/images/logo/logo-its-white.png'
+import navMenu from '../assets/images/svg/menu.svg'
 import navbarDrip from '../assets/images/png/navbar-drip.png'
 import shoppingCart from '../assets/images/svg/shopping-cart.svg'
 
 export default function Navigation() {
-  // Change bg color
   const [bgColor, setBgColor] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false)
 
   const changeBgColor = () => {
     if (window.scrollY >= 80) {
@@ -19,42 +20,29 @@ export default function Navigation() {
   }
   window.addEventListener('scroll', changeBgColor)
 
+  const handleClick = () => {
+    setOpenMenu((prevState) => !prevState)
+  }
+
   return (
-    <main className={bgColor ? 'bg-navbar fixed-top' : 'fixed-top'}>
-      <Navbar
-        expand="lg"
-        className={
-          bgColor
-            ? 'navbar-dark container-lg d-lg-flex justify-content-between pt-lg-1'
-            : 'navbar-dark container-lg d-lg-flex justify-content-between pt-lg-3'
-        }
-      >
-        {/* Logo/Home */}
-        <Navbar.Brand href="#home" className="col-lg-4 ms-lg-0 ms-3">
+    <main
+      className={
+        bgColor ? 'bg-navbar fixed-top py-lg-2 py-2' : 'fixed-top py-lg-4 py-2'
+      }
+    >
+      <div className="container d-flex justify-content-between">
+        {/* Logo */}
+        <div href="#home" className="col-lg-4">
           <img
             src={itsLogo}
             height={bgColor ? '36px' : '48px'}
             alt="its-logo"
           />
-        </Navbar.Brand>
-        {/* Booking - Mobile View */}
-        <Button
-          className={
-            bgColor
-              ? 'd-lg-none d-block ms-4 outline'
-              : 'd-lg-none d-block ms-4'
-          }
-        >
-          Book A Cabin
-        </Button>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="d-lg-flex justify-content-end"
-        >
-          <Nav className="mx-4 align-items-center">
-            {/* Links */}
-            <Nav.Link href="#about">
+        </div>
+        <div className="d-lg-flex align-items-center">
+          {/* Navigation Links */}
+          <div className="d-none d-lg-block">
+            <a href="#about">
               The Ship
               <img
                 src={chevronDown}
@@ -62,28 +50,50 @@ export default function Navigation() {
                 height="22px"
                 alt="chevron-down"
               />
-            </Nav.Link>
-            <Nav.Link href="#cabins">Cabins</Nav.Link>
-            <Nav.Link href="#lineup">LineUp</Nav.Link>
-            <Nav.Link href="#faq">FAQ</Nav.Link>
-            <div class="d-lg-block d-none vr mx-3 my-2"></div>
-            <Nav.Link href="#login">Login</Nav.Link>
-            <Nav.Link href="#login">
+            </a>
+            <a href="#cabins">Cabins</a>
+            <a href="#lineup">LineUp</a>
+            <a href="#faq">FAQ</a>
+            <span class="vr mx-3"></span>
+            <a href="#login">Login</a>
+            <a href="#shopping" className="mx-4 me-5">
               <img src={shoppingCart} height="24px" alt="shopping-cart" />
-            </Nav.Link>
-            {/* Booking - Web View */}
-            <Button
-              className={
-                bgColor
-                  ? 'd-lg-block d-none ms-4 outline'
-                  : 'd-lg-block d-none ms-4'
-              }
-            >
-              Book A Cabin
-            </Button>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+            </a>
+          </div>
+          {/* Booking Button */}
+          <Button className={bgColor ? 'outline' : 'auto'}>Book A Cabin</Button>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div href="#home" className="d-lg-none d-block" onClick={handleClick}>
+          <img src={navMenu} height="36px" alt="nav-menu" />
+        </div>
+      </div>
+      {/* Mobile Navigation Links */}
+      {openMenu ? (
+        <div className="bg-red d-lg-none d-block">
+          <div className="row text-center pt-5">
+            <a href="#about">
+              The Ship
+              <img
+                src={chevronDown}
+                className="ms-1"
+                height="22px"
+                alt="chevron-down"
+              />
+            </a>
+            <a href="#cabins">Cabins</a>
+            <a href="#lineup">LineUp</a>
+            <a href="#faq">FAQ</a>
+            <a href="#login">Login</a>
+            <a href="#shopping">
+              <img src={shoppingCart} height="24px" alt="shopping-cart" />
+            </a>
+          </div>
+        </div>
+      ) : null}
+
+      {/* Navbar Bg */}
       {bgColor ? (
         <img
           src={navbarDrip}
